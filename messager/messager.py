@@ -7,9 +7,11 @@ from utils.Customer import Customer,Type
 def build_email_message(customer: Customer):
     message = MessageBuilder().set_reciever(customer.email)
     if(customer.type == Type.PREVENT):
-         message.set_subject(SUBJECT_CUSTOMER).set_body(BODY_CUSTOMER(customer.books))
+         message.set_subject(SUBJECT_CUSTOMER)\
+                .set_body(BODY_CUSTOMER(customer.books))
     else:
-        message.set_subject(SUBJECT_BOSS).set_body(BODY_BOSS(customer,customer.books))         
+        message.set_subject(SUBJECT_BOSS)\
+                .set_body(BODY_BOSS(customer,customer.books))         
     return message.build() 
 
 
