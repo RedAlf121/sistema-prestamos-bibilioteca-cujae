@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Hola {{name}}</h1>
+    <p>
+        Este es un mensaje para que entregues los siguientes libros que solicitó préstamo
+    </p>
+    <ul>
+        {% for book in books %}
+        <li><a href="#">{{ book }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
