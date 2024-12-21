@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordatorio de Devolución de Libros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #ffffff;
+            }
+            table {
+                background-color: #1e1e1e;
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            }
+            h1 {
+                color: #ffffff;
+            }
+            p {
+                color: #cccccc;
+            }
+            .header {
+                background-color: #333333;
+            }
+        }
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #f4f4f4;
+                color: #000000;
+            }
+            table {
+                background-color: #ffffff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #000000;
+            }
+            p {
+                color: #333333;
+            }
+            .header {
+                background-color: #4a90e2;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola {{name}}</h1>
-    <p>
-        Este es un mensaje para que entregues los siguientes libros que solicitó préstamo
-    </p>
-    <ul>
-        {% for book in books %}
-        <li><a href="#">{{ book }}</a></li>
-        {% endfor %}
-    </ul>
+    <table cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; margin: 20px auto; border-radius: 8px; overflow: hidden;">
+        <tr>
+            <td style="padding: 30px; text-align: center;" class="header">
+                <h1 style="margin: 0; font-size: 24px;">Recordatorio de Devolución</h1>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 20px;">
+                <p style="font-size: 16px; margin-bottom: 20px;">Hola {{name}}!,</p>
+                <p style="font-size: 14px; margin-bottom: 20px;">Tienes los siguientes libros por devolver:</p>
+                {% for book in books %}
+                <!-- Libro 1 -->
+                <table cellpadding="0" cellspacing="0" style="width: 100%; margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden;">
+                    <tr>
+                        <td style="padding: 15px; background-color: #f8f8f8; width: 40px; text-align: center;">
+                            <img src="https://img.icons8.com/ios-filled/50/4a90e2/book.png" alt="Libro" style="width: 30px; height: 30px;">
+                        </td>
+                        <td style="padding: 15px;">
+                            <p style="margin: 0; font-weight: bold; color: #333333;"><a href="#">{{book}}</a></p>
+                            <p style="margin: 5px 0 0; font-size: 12px; color: #888888;">Vence: [Fecha]</p>
+                        </td>
+                    </tr>
+                </table>
+                {% endfor %}
+                <p style="color: #666666; font-size: 14px; margin-top: 20px;">Por favor, devuelve estos libros pronto para evitar cargos.</p>
+
+                <p style="color: #666666; font-size: 14px; margin-top: 20px;">Gracias,<br>Equipo de la Biblioteca</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 15px; background-color: #f8f8f8; text-align: center; color: #888888; font-size: 12px;">
+                <p style="margin: 0;">© 2023 Biblioteca Universitaria. Todos los derechos reservados.</p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
