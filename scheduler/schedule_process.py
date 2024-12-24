@@ -4,6 +4,15 @@ from datetime import datetime
 import pickle
 import time
 
+def start(job):
+    if not is_notified():
+        if not is_later_default():
+            job_wrapper(job)
+        test_schedule(lambda:job_wrapper(job))
+        while True:
+            schedule.run_pending()
+            time.sleep(1)
+
 def schedule_process(job):
     schedule.every().days.at(TIME_DEFAULT).do(job)
 
@@ -33,12 +42,4 @@ def is_notified():
     except EOFError:
         return False 
 
-def start(job):
-    if not is_notified():
-        if not is_later_default():
-            job_wrapper(job)
-        test_schedule(lambda:job_wrapper(job))
-        while True:
-            schedule.run_pending()
-            time.sleep(1)
 
