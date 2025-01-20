@@ -3,12 +3,10 @@ from messager.messager import send
 from scheduler.watcher import start_watching
 
 if __name__ == "__main__":
-      '''
-      customer = Customer('Osvaldo','osvaldo020213@gmail.com',[],Category.STUDENT)
+      customer = Customer('Alex','alexpp2809@gmail.com',[],Category.STUDENT)
       send('email',customer=customer)
       print('Hecho')
-      '''
-      start_watching()
+      #start_watching()
 
 
 

@@ -1,0 +1,91 @@
+Numero_Prestamos_Anteriores,Solicitudes_No_Satisfechas,Numero_Renovaciones,Disponibilidad_Actual,Categoria_Libro,Demanda_Libro
+12,3,2,5,Ficción,1
+25,6,1,3,Ciencia,0
+7,1,0,8,Historia,1
+18,4,3,2,No Ficción,0
+10,2,1,6,Ficción,1
+5,0,0,4,Ciencia,0
+20,7,2,1,Historia,1
+13,2,4,7,No Ficción,0
+8,3,0,9,Ficción,1
+16,4,1,2,Ciencia,0
+9,1,2,6,Historia,1
+22,5,3,1,No Ficción,0
+14,2,1,5,Ficción,1
+11,3,0,4,Ciencia,0
+6,1,0,8,Historia,1
+21,6,2,3,No Ficción,0
+12,4,1,7,Ficción,1
+7,2,0,9,Ciencia,0
+19,5,3,2,Historia,1
+15,3,2,4,No Ficción,0
+10,1,1,6,Ficción,1
+8,0,0,5,Ciencia,0
+17,4,3,1,Historia,1
+13,3,1,7,No Ficción,0
+9,2,0,8,Ficción,1
+20,5,2,3,Ciencia,0
+11,1,1,6,Historia,1
+23,6,3,2,No Ficción,0
+14,2,0,5,Ficción,1
+12,3,1,4,Ciencia,0
+5,0,0,9,Historia,1
+18,4,2,1,No Ficción,0
+10,2,3,7,Ficción,1
+7,1,0,8,Ciencia,0
+16,5,1,3,Historia,1
+13,3,2,5,No Ficción,0
+8,0,0,6,Ficción,1
+19,4,3,2,Ciencia,0
+9,2,1,7,Historia,1
+21,6,0,1,No Ficción,0
+15,3,1,5,Ficción,1
+11,1,2,4,Ciencia,0
+6,0,0,8,Historia,1
+20,5,3,3,No Ficción,0
+14,2,1,6,Ficción,1
+9,1,0,7,Ciencia,0
+17,4,2,2,Historia,1
+12,3,3,5,No Ficción,0
+7,0,1,8,Ficción,1
+22,6,0,1,Ciencia,0
+13,2,2,4,Historia,1
+18,4,1,7,No Ficción,0
+10,1,0,6,Ficción,1
+8,0,3,9,Ciencia,0
+16,5,1,2,Historia,1
+12,3,2,5,No Ficción,0
+5,0,0,8,Ficción,1
+21,6,1,1,Ciencia,0
+14,2,3,3,Historia,1
+9,1,0,7,No Ficción,0
+20,4,2,5,Ficción,1
+11,2,1,4,Ciencia,0
+6,0,0,9,Historia,1
+18,5,3,2,No Ficción,0
+10,1,1,7,Ficción,1
+8,0,0,6,Ciencia,0
+19,4,2,3,Historia,1
+13,3,1,5,No Ficción,0
+7,1,0,8,Ficción,1
+23,6,2,2,Ciencia,0
+12,2,3,4,Historia,1
+9,0,1,7,No Ficción,0
+17,5,0,6,Ficción,1
+11,1,0,5,Ciencia,0
+20,4,3,3,Historia,1
+14,3,2,2,No Ficción,0
+8,0,1,9,Ficción,1
+16,5,0,1,Ciencia,0
+10,2,3,7,Historia,1
+15,1,1,6,No Ficción,0
+9,0,0,8,Ficción,1
+22,4,2,3,Ciencia,0
+13,2,1,5,Historia,1
+18,5,0,4,No Ficción,0
+12,3,2,6,Ficción,1
+7,0,1,7,Ciencia,0
+21,6,3,1,Historia,1
+10,1,0,8,No Ficción,0
+5,0,0,9,Ficción,1
+19,4,1,2,Ciencia,0
