@@ -1,4 +1,9 @@
-DB_NAME = 'library'
+DB_NAME = 'libraryBD'
 
-COLLECTION = 'libraryBD'
+COLLECTIONS = [
+    'borrowings',
+    'documents',
+    'request',
+    'users'
+]
 

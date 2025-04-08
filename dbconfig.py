@@ -8,5 +8,6 @@ client = MongoClient(uri,server_api=ServerApi('1'))
 
 db = client[DB_NAME]
 
-collection = db[COLLECTION]
+collections = {collection: db[collection] for collection in COLLECTIONS}
+
 
