@@ -4,15 +4,15 @@ from email.mime.text import MIMEText
 import os
 from jinja2 import Environment, FileSystemLoader
 from messager.email import EMAIL_SENDER
-from enum import Enum
+from enum import Enum,auto
 
 class Type(Enum):
-    IMPORTANT = 0
-    PREVENT = 1
+    IMPORTANT = auto()
+    PREVENT = auto()
 
 class Category(Enum):
-    STUDENT = 0
-    TEACHER = 1
+    STUDENT = auto()
+    TEACHER = auto()
 
 @dataclass
 class Customer:
